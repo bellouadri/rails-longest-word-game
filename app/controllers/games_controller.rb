@@ -25,9 +25,5 @@ class GamesController < ApplicationController
     data_serialized = open(url).read
     parsing_result = JSON.parse(data_serialized)
     @result = parsing_result['found']
-
-
-
   end
-
 end
